@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gruppo', cursive ;
+}
+/*-----------HEADER----------*/
+header{
+    background-color:#2b0f5e ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 10px;
+}
+header a{
+    text-decoration: none;
+}
+header a h2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+header nav ul li{
+    margin: 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*-----------MAIN----------*/
+main{
+    background-color: #170931;
+}
+main h1{
+    font-size: 3rem;
+    color: #e6e6e6;
+
+}
+main h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #e6e6e6;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+main .hero{
+    display: flex;
+    justify-content: center;
+    background-color: #29aecf;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #e6e6e6;
+}
+
+main .hero h1{
+    font-size: 3rem;
+}
+main .hero h3{
+    font-size: 24px;
+}
+main section .fondo-body{
+    width: 100%; 
+    height: 100vh; 
+}
+/*-------MAIN-ULTIMAS NOVEDADES/CATALOGO---------*/
+.catalogo-section h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    color: #e6e6e6;
+}
+.catalogo-section .beats-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.catalogo-section .beats-box div{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    background-color: #839791;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5)
+}
+.catalogo-section .beats-box div audio{
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.catalogo-section .beats-box div img{
+    width: 150px;
+    height: 150px;
+}
+.catalogo-section .beats-box div h3{
+    margin-top: 10px;
+}
+.catalogo-section .beats-box div a{
+    text-decoration: none;
+    background-color: #c51b1b;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+
+/*-----------FOOTER----------*/
+footer{
+    background-color: #7c4cbb;
+    font-family:'Gruppo', cursive ;
+    padding-top: 15px;
+}
+footer h2{
+    padding: 10px;
+}
+
+footer .redes img{
+    width:100px 
+}
+footer .redes a{
+    text-decoration: none;
+}
+
+/*------------------KITS------------------*/
+.kits-nuevos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.kits-nuevos h1{
+    color: #e6e6e6;
+}
+.kits-nuevos .kits-box{
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    background-color: #839791;
+    text-align: center;
+}
+.kits-nuevos .kits-box a{
+    text-decoration: none;
+}
+/*----------------SERVICIOS---------------*/
+
+.servicios{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.servicios .servicios-box{
+    display: flex;
+    word-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+    
+
+}
+.servicios .servicios-box div{
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+    width: 300px;
+    height: 500px;
+    background-color: #839791;
+    text-align: center;
+    border-radius: 5%;
+    
+    
+}
+
+.servicios .servicios-box img{
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.servicios .servicios-box div h2{
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.servicios .servicios-box div a{
+    text-decoration: none;
+}
+.servicios .servicios-box div a h3{
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #c51b1b;
+    color: #e6e6e6;
+}
+
+.servicios .servicios-box div p{
+    text-align: center;
+}
+
+/*-------------CONTACTO------------*/
+
+main .titulo-cuestionario{
+    padding: 15px;
+    text-align: center;
+}
+main .cuestionario{
+    display: flex;
+    justify-content: center;
+    background-color: #839791;
+}
+
+main .cuestionario .cuestionario-contacto form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+
+
+
