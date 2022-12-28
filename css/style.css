@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import 'animate.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
 *{
     margin: 0;
@@ -41,6 +42,10 @@ ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
+    transition: 1s ease-in;
+}
+ul li a:hover{
+    transform: scale(1.1);
 }
 
 /*-----------MAIN----------*/
@@ -77,8 +82,10 @@ h3{
     text-align: center;
     margin: 0 auto;
     padding: 10px;
-    color: #e6e6e6;
+    color: #e6e6e6;    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: ease-in animation-hero 1s ;
+    margin-bottom: 20px;
 }
 .hero div{
     padding: 10px;
@@ -126,6 +133,10 @@ h3{
     box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
+    transition: 1s linear;
+}
+.catalogo-section .beats-box div:hover{
+    transform: scale(1.1);
 }
 .catalogo-section .beats-box div audio{
     width: 250px;
@@ -534,4 +545,15 @@ footer .redes a{
     .licencias-section{
         display: none;
     } 
+}
+
+/*!----------------ANIMATION--------*/
+
+@keyframes animation-hero {
+    0%{
+        transform: scale (0);
+    }
+    100%{
+        transform: scale (1)
+    }
 }
