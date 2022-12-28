@@ -461,13 +461,15 @@ footer .redes a{
         font-size: 18px;
     }
 }
+@media screen and (max-width:351px){
+    footer .redes img{
+        width: 50px;
+    }
 
+}
 @media screen and (max-width:325px){
     nav{
         display: none;
-    }
-    footer .redes img{
-        width: 50px;
     }
 }
 
