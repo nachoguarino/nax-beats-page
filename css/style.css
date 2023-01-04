@@ -16,6 +16,11 @@ header{
     padding: 15px;
     font-family: 'Roboto', sans-serif;
 }
+.foto-logo{
+    width: 100px;
+    padding: 10px;
+    /* background-color: red; */
+}
 header a{
     text-decoration: none;
     font-weight: 200;
