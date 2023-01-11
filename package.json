@@ -1,0 +1,26 @@
+{
+  "name": "code-1",
+  "version": "1.0.0",
+  "description": "Esta pagina esta destinada a artistas, productores y beatmakers dando servicios como venta de beats, servicios varios y kits de produccion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachoguarino/nax-beats-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachoguarino/nax-beats-page/issues"
+  },
+  "homepage": "https://github.com/nachoguarino/nax-beats-page#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
