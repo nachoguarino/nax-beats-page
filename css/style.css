@@ -48,6 +48,9 @@ ul li a:hover{
 }
 
 /*-----------MAIN----------*/
+html{
+    scroll-behavior: smooth;
+}
 main{
     background-color: #170931;
 }
@@ -236,7 +239,7 @@ footer .redes a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
 }
 .kits-nuevos h1{
     color: #e6e6e6;
@@ -274,8 +277,8 @@ footer .redes a{
 
 .servicios-tittle{
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .servicios .servicios-box{
@@ -322,6 +325,7 @@ footer .redes a{
 
 .servicios .servicios-box div p{
     text-align: center;
+    font-size: 13px;
 }
 
 /*-------------CONTACTO------------*/
@@ -352,6 +356,8 @@ footer .redes a{
 .comunidad-text{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .comunidad-box{
     display: flex;
@@ -397,7 +403,24 @@ footer .redes a{
     }
 
 }
+/*!-----------SERVICIOS--------*/
+@media screen and (max-width: 1202px) {
+    .servicios .servicios-box div{
+        margin: 25px;
+    }
+}
+@media screen and (max-width: 1054px){
+    .servicios .servicios-box div{
+        margin: 15px;
+    }
+}
 
+@media screen and (max-width: 1054px){
+    .servicios .servicios-box{
+        flex-direction: column;
+    }
+}
+/*!----------------------------*/
 @media screen and (max-width:1000px) {
     .catalogo-section .beats-box div{
         width: 200px;
@@ -426,8 +449,13 @@ footer .redes a{
 } 
 
 @media screen and (max-width:909px){
-    .fondo-body{
-        display: none;
+    .hero-box{
+        background-image: none;
+        height: 55vh;
+    }
+    .hero-text{
+        padding: 40px;
+        width: 80%;
     }
 }
 
@@ -459,6 +487,8 @@ footer .redes a{
         font-size: 18px;
     }
 }
+
+
 @media screen and (max-width:351px){
     footer .redes img{
         width: 50px;
@@ -471,7 +501,7 @@ footer .redes a{
     }
 }
 
-/*----------CATALOGO----------*/
+/**----------CATALOGO----------*/
 @media  screen and (max-width:1110px) {
     .licencias-precios h3{
         font-size: 15px;
@@ -545,6 +575,23 @@ footer .redes a{
     .licencias-section{
         display: none;
     } 
+}
+/*------------KITS---------*/
+@media screen and (max-width:510px){
+    header{
+        height: 150px;
+    }
+}
+
+/*?-----------CONTACTO------------*/
+@media screen and (max-width: 330px) {
+    .titulo-cuestionario{
+        font-size: 2rem;
+    }
+    .cuestionario .cuestionario-contacto form{
+        width:250px;
+    }
+    
 }
 
 /*!----------------ANIMATION--------*/
