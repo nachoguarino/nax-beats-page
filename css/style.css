@@ -64,6 +64,7 @@ h2{
     font-size: 2rem;
     color: #e6e6e6;
     text-align: center;
+    padding: 10px;
 }
 h3{
     color: white;
@@ -107,6 +108,33 @@ h3{
     color: white;
     padding: 10px;
 }
+
+/*-----------FOOTER----------*/
+footer{
+    background-color: #7c4cbb;
+    font-family:'Gruppo', cursive ;
+    padding: 20px;
+    display: column;
+    justify-content: center;
+}
+footer .redes-text{
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer .redes{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+footer .redes img{
+    width: 70px;
+    padding: 5px; 
+}
+footer .redes a{
+    text-decoration: none;
+}
+
 /*------MAIN-ULTIMAS NOVEDADES/CATALOGO---------*/
 .catalogo-section h1{
     text-align: center;
@@ -187,31 +215,6 @@ h3{
     text-align: center;
 }
 
-/*-----------FOOTER----------*/
-footer{
-    background-color: #7c4cbb;
-    font-family:'Gruppo', cursive ;
-    padding: 20px;
-    display: column;
-    justify-content: center;
-}
-footer .redes-text{
-    display: flex;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-footer .redes{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-footer .redes img{
-    width: 70px;
-    padding: 5px; 
-}
-footer .redes a{
-    text-decoration: none;
-}
 
 /*------------------KITS------------------*/
 .kits-tittle-section{
@@ -241,9 +244,7 @@ footer .redes a{
     text-align: center;
     padding: 25px;
 }
-.kits-nuevos h1{
-    color: #e6e6e6;
-}
+
 .kits-nuevos .kits-box{
     justify-content: center;
     width: 300px;
@@ -338,7 +339,6 @@ footer .redes a{
 .cuestionario{
     display: flex;
     justify-content: center;
-
 }
 
 .cuestionario .cuestionario-contacto form{
@@ -492,6 +492,16 @@ footer .redes a{
 @media screen and (max-width:351px){
     footer .redes img{
         width: 50px;
+    }
+    .hero-box{
+        height: 70vh;
+        
+    }
+    .hero-text h1{
+        font-size: 2rem;
+    }
+    .hero-text h3{
+        font-size: 12px;
     }
 
 }
