@@ -392,7 +392,12 @@ footer .redes a{
 
 /*----------MEDIA QUERYS-----------*/
 
-/*------------INDEX-------------*/
+
+@media screen and (max-width: 1202px) {
+    .servicios .servicios-box div{
+        margin: 25px;
+    }
+}
 
 @media screen and (max-width:1133px){
     .hero{
@@ -403,10 +408,16 @@ footer .redes a{
     }
 
 }
-/*!-----------SERVICIOS--------*/
-@media screen and (max-width: 1202px) {
-    .servicios .servicios-box div{
-        margin: 25px;
+
+@media  screen and (max-width:1110px) {
+    .licencias-precios h3{
+        font-size: 15px;
+    }
+    .licencias-precios p{
+        font-size: 13px;
+    }
+    .licencias-precios h2{
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 1054px){
@@ -420,7 +431,7 @@ footer .redes a{
         flex-direction: column;
     }
 }
-/*!----------------------------*/
+
 @media screen and (max-width:1000px) {
     .catalogo-section .beats-box div{
         width: 200px;
@@ -471,6 +482,21 @@ footer .redes a{
 
 }
 
+@media  screen and (max-width:749px) {
+    .licencias-precios{
+        grid-template-rows: 100px 100px 50px;
+    }
+    .licencias-precios h3{
+        font-size: 12px;
+    }
+    .licencias-precios p{
+        font-size: 12px;
+    }
+    .licencias-precios h2{
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width:513px){
     header {
         flex-direction: column;
@@ -512,32 +538,9 @@ footer .redes a{
 }
 
 /**----------CATALOGO----------*/
-@media  screen and (max-width:1110px) {
-    .licencias-precios h3{
-        font-size: 15px;
-    }
-    .licencias-precios p{
-        font-size: 13px;
-    }
-    .licencias-precios h2{
-        font-size: 24px;
-    }
-}
 
-@media  screen and (max-width:749px) {
-    .licencias-precios{
-        grid-template-rows: 100px 100px 50px;
-    }
-    .licencias-precios h3{
-        font-size: 12px;
-    }
-    .licencias-precios p{
-        font-size: 12px;
-    }
-    .licencias-precios h2{
-        font-size: 15px;
-    }
-}
+
+
 
 @media  screen and (max-width:600px) {
     .licencias-precios{

@@ -1,0 +1,42 @@
+
+$color-fondo: #170931;
+$color-foot:  #7c4cbb;
+$color-nav:   #2b0f5e;
+$color-boton: #c51b1b;
+$color-card:  #839791;
+
+//!------MAPS-----------*/
+
+$boton:(
+    td-boton: none,
+    color-boton: white,
+    pad-boton: 10px,
+    font-s-boton:20px,
+    font-w-boton:bold,
+    bord-boton:5%,
+);
+
+//*?------EXTENDS------*/
+
+%flex-cut {
+    display:flex;
+    justify-content: center;
+}
+
+//*!--MIXIN---*/
+
+@mixin flex-var ($flex-d,$a-text){
+    flex-direction: $flex-d;
+    text-align: $a-text;
+}
+
+@mixin tamaño ($ancho, $alto, $pad){
+    width: $ancho;
+    height: $alto;
+    padding: $pad;
+}
+
+@mixin flex-var-2 ($just-cont, $a-text){
+    justify-content: $just-cont;
+    text-align: $a-text;
+}

@@ -1,0 +1,199 @@
+/*----------MEDIA QUERYS-----------*/
+
+@media screen and (max-width:1133px){
+    .hero{
+        width: 100%;
+    }
+    .catalogo-section .beats-box{
+        padding: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1202px) {
+    .servicios .servicios-box div{
+        margin: 25px;
+    }
+}
+
+@media  screen and (max-width:1110px) {
+    .licencias-precios h3{
+        font-size: 15px;
+    }
+    .licencias-precios p{
+        font-size: 13px;
+    }
+    .licencias-precios h2{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1054px){
+    .servicios .servicios-box{
+        flex-direction: column;
+    }
+    .servicios .servicios-box div{
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .catalogo-section .beats-box div{
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .catalogo-section .beats-box div img{
+        width: 100px;
+        height: 100px;
+    }
+    .catalogo-section .beats-box div audio{
+        width:170px;
+        height: 36px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .catalogo-section .beats-box div a{
+        font-size: 15px;
+        align-items: center;
+
+    }
+    .catalogo-section .beats-box div h3{
+        font-size: 15px;
+    }
+} 
+
+@media screen and (max-width:909px){
+    .hero-box{
+        background-image: none;
+        height: 55vh;
+    }
+    .hero-text{
+        padding: 40px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:819px){
+    nav ul li{
+        margin: 5px;
+        font-size: 18px;
+    }
+    .hero h1{
+    font-size: 36px;
+    }
+}
+
+@media  screen and (max-width:749px) {
+    .licencias-precios{
+        grid-template-rows: 100px 100px 50px;
+    }
+    .licencias-precios h3{
+        font-size: 12px;
+    }
+    .licencias-precios p{
+        font-size: 12px;
+    }
+    .licencias-precios h2{
+        font-size: 15px;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .licencias-precios{
+        grid-template-rows: 50px 100px 50px;
+    }
+    .licencias-precios h3{
+        font-size: 12px;
+    }
+        .licencias-precios p{
+        display: none;
+    }
+    .licencias-precios h2{
+        font-size: 15px;
+    }
+        .licencias-precios .licencia-mp3{
+        grid-row: 1 / 3;
+    }
+    .licencias-precios .licencia-wav{
+        grid-row: 1 / 3;
+    }
+    .licencias-precios .licencia-full{
+        grid-row: 1 / 3;
+    }
+    .licencias-precios .licencia-exclusiva{
+        grid-row: 1 / 3;
+    }
+}
+
+@media screen and (max-width:513px){
+    header {
+        flex-direction: column;
+        height: 110px;
+    }
+    .nax-tittle{
+        margin: 0;
+    }
+    nav ul li{
+        margin: 5px;
+        font-size: 15px;
+    }
+    .hero h3{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:510px){
+    header{
+        height: 150px;
+    }
+}
+
+@media  screen and (max-width:400px){
+    .licencias-section{
+        display: none;
+    } 
+}
+
+
+@media screen and (max-width:351px){
+    footer .redes img{
+        width: 50px;
+    }
+    .hero-box{
+        height: 70vh;
+        
+    }
+    .hero-text h1{
+        font-size: 2rem;
+    }
+    .hero-text h3{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .titulo-cuestionario{
+        font-size: 2rem;
+    }
+    .cuestionario .cuestionario-contacto form{
+        width:250px;
+    }
+    
+}
+
+@media screen and (max-width:325px){
+    nav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+

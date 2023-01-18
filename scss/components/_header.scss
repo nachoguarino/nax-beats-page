@@ -1,7 +1,7 @@
 /*--------HEADER-------*/
 
 header {
-    background-color: #2b0f5e;
+    background-color: $color-nav;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,12 +11,15 @@ header {
     a {
         text-decoration: none;
         font-weight: 200;
+        .foto-logo{
+            width: 100px;
+            padding: 10px;
+        }
     }
     nav {
         ul {
             list-style: none;
-            display: flex;
-            justify-content: center;
+            @extend %flex-cut;
             margin: 0;
             padding-left: 0;
             li {

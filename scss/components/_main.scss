@@ -1,116 +1,118 @@
 /*-----------INDEX/CATALOGO----------*/
-
-main{
-    .hero{
-        .hero-box{
-            width: 100%;
-            height: 80vh;
-            background-image: url("../img/fondo1.JPG");
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            .hero-text{
-                flex-direction: column;
-                text-align: center;
-                position: relative;
-                padding: 40px;
-                top: 30%;
-                width: 60%;
-                height: max-content;
-                color: #e6e6e6;    
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                animation: ease-in animation-hero 1s ;
-                border: 3px solid #b988faa1 ;
-                border-radius: 100px;
-                background-color: rgba(0, 0, 0, 0.507);
-                h1{
-                    font-size: 3rem;
-                }
-                h3{
-                    font-size: 24px;
-                    color:white;
-                    font-weight: 400;
-                    margin-bottom: 20px;
-                }
-                }
-                a{
-                    text-decoration: none;
-                    background-color: #839791;
-                    color: white;
-                    padding: 10px;
-                }
-            }
-        }
-    .index-content{
-        .catalogo-section{
-            h1{
-                text-align: center;
-                padding: 20px;
-                font-size: 3rem;
-                color: #e6e6e6; 
-            }
-            h2{
-                margin: 10px;
-            }
-            .beats-box{
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                padding: 50px;
-                div{
-                    width: 300px;
-                    height: 400px;
-                    text-align: center;
-                    background-color: #839791;
-                    padding: 20px;
-                    border-radius: 5%;
-                    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
+html{
+    scroll-behavior: smooth;
+    main{
+    background-color: $color-fondo;
+        .hero{
+            .hero-box{
+                width: 100%;
+                height: 80vh;
+                background-image: url("../img/fondo1.JPG");
+                background-size: cover;
+                @extend %flex-cut;
+                .hero-text{
+                    @include flex-var( column, center);
+                    position: relative;
+                    @include tamaño(60%, max-content, 40px);
+                    top: 30%;
+                    color: #e6e6e6;    
                     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    font-weight: 200;
-                    transition: 1s linear;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                    img{
-                        width: 150px;
-                        height: 150px;
+                    animation: ease-in animation-hero 1s ;
+                    border: 3px solid #b988faa1 ;
+                    border-radius: 100px;
+                    background-color: rgba(0, 0, 0, 0.507);
+                    h1{
+                        font-size: 3rem;
                     }
                     h3{
-                        margin-top: 10px;
-                        color: black;
+                        font-size: 24px;
+                        color:white;
+                        font-weight: 400;
+                        margin-bottom: 20px;
                     }
-                    audio{
-                        width: 250px;
-                        margin-top: 25px;
-                        margin-bottom: 25px;
                     }
                     a{
                         text-decoration: none;
-                        background-color: #c51b1b;
+                        background-color: $color-foot;
                         color: white;
                         padding: 10px;
-                        font-size: 20px;
-                        font-weight: bold;
+                    }
+                }
+            }
+            .catalogo-section{
+                h1{
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 3rem;
+                    color: #e6e6e6; 
+                }
+                h2{
+                    margin: 10px;
+                    font-size: 2rem;
+                    color: #e6e6e6;
+                    text-align: center;
+                    padding: 10px;
+                }
+                .beats-box{
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    padding: 50px;
+                    div{
+                        @include tamaño(300px, 400px, 20px);
+                        text-align: center;
+                        background-color: $color-card;
                         border-radius: 5%;
+                        box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 200;
+                        transition: 1s linear;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                        img{
+                            width: 150px;
+                            height: 150px;
+                        }
+                        h3{
+                            margin-top: 10px;
+                            color: black;
+                        }
+                        audio{
+                            width: 250px;
+                            margin-top: 25px;
+                            margin-bottom: 25px;
+                        }
+                        a{
+                            background-color: $color-boton;
+                            text-decoration: map-get($boton , td-boton);
+                            color: map-get($boton , color-boton );
+                            padding:map-get($boton , pad-boton);
+                            font-size:map-get($boton , font-s-boton );
+                            font-weight:map-get($boton , font-w-boton );
+                            border-radius: map-get($boton , bord-boton );
+                        }
                     }
                 }
             }
         }
     }
-}
+
 
 /*---------CATOLOGO(LICENCIAS)---------*/
 
 main{
     .licencias-section{
         .licencias-text{
+            text-align: center;
+            color: white;
             margin: 10px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;           
         }
         .licencias-precios{
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             display: grid;
-            background-color: #839791;
+            background-color: $color-card;
             width: 80%;
             margin: 0 auto;
             border: solid white 1px;
@@ -118,9 +120,8 @@ main{
             grid-template-rows: 100px 100px 100px;
             grid-template-columns: repeat(4, 1fr);
             .licencia-items{
-                justify-content: center;
+                @include flex-var-2(center, center);
                 border:solid 1px rgba(255, 255, 255, 0.315);
-                text-align: center;
                 p{
                     color: white;
                 }
@@ -140,44 +141,35 @@ main{
             margin: 10px;
             font-weight: 500;
             .titulo-kits{
-                display: flex;
-                justify-content: center;
+                @extend %flex-cut;
                 color: white;
                 text-align: center;
             }
             .subtext-kits{
-                display: flex;
-                justify-content: center;
+                @extend %flex-cut;
                 color: white;
             }
         }
     }
     .kits-nuevos{
-        display: flex;
-        justify-content: center;
+        @extend %flex-cut;
         align-items: center;
         text-align: center;
         padding: 25px;
     }
         .kits-box{
-            justify-content: center;
-            width: 300px;
-            height: 500px;
-            background-color: #839791;
-            text-align: center;
-            padding: 10px;
+            @include tamaño(300px, 500px, 10px);
+            @include flex-var-2(center, center);
+            background-color: $color-card;
             border-radius: 10px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             img{
-                padding: 10px;
-                height: 250px;
-                width: 250px;
+                @include tamaño(250px, 250px, 10px);
                 justify-content: center;
             }
             a{
                 padding-top: 10px;
-                justify-content: center;
-                text-align: center;
+                @include flex-var-2 (center, center);
                 text-decoration: none;
                 font-weight: 600;
             }
@@ -191,10 +183,10 @@ main{
         text-align: center;
         padding-bottom: 20px;
         padding-top: 20px;
+        color: white;
     }
     .servicios{
-        display: flex;
-        justify-content: center;
+        @extend %flex-cut;
         padding: 50px;
         .servicios-box{
             display: flex;
@@ -203,11 +195,9 @@ main{
             justify-content: space-around;
             div{
                 align-items: center;
-                padding: 20px;
+                @include tamaño(300px, 500px, 20px);
                 margin: 50px;
-                width: 300px;
-                height: 500px;
-                background-color: #839791;
+                background-color:$color-card;
                 text-align: center;
                 border-radius: 5%;
                 img{
@@ -225,7 +215,7 @@ main{
                     h3{
                         padding: 15px;
                         margin-bottom: 10px;
-                        background-color: #c51b1b;
+                        background-color: $color-boton;
                         color: #e6e6e6;
                     }
                 }
@@ -244,20 +234,18 @@ main{
     .titulo-cuestionario{
         padding: 15px;
         text-align: center;
+        color: white;
     }
     .cuestionario{
-        display: flex;
-        justify-content: center;
+        @extend %flex-cut;
         .cuestionario-contacto{
             form{
-                display: flex;
-                flex-direction: column;
-                background-color: #839791;
-                justify-content: center;
+                @extend %flex-cut;
+                @include flex-var(column, center);
+                background-color: $color-card;
                 margin: 20px;
                 padding: 20px;
                 width: 300px;
-                text-align: center;
                 border-radius: 5px;
             }
         }
@@ -268,24 +256,20 @@ main{
 
 main{
     .comunidad-text{
-        display: flex;
-        justify-content: center;
+        @extend %flex-cut;
         padding-top: 20px;
         padding-bottom: 20px;
+        color: white;
     }
     .comunidad-box{
-        display: flex;
-        justify-content: center;
+        @extend %flex-cut;
         align-items: center;
         padding: 50px;
         .comunidad-card{
-            justify-content: center;
-            width: 300px;
-            height: 500px;
+            @include flex-var-2(center, center);
+            @include tamaño(300px, 500px, 20px);
             align-items: center;
-            text-align: center;
-            background-color: #839791;
-            padding: 20px;
+            background-color: $color-card;
             border-radius: 5%;
             box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -301,6 +285,15 @@ main{
                 font-size: 18px;
             }
         }
+    }
+}
+
+@keyframes animation-hero {
+    0%{
+        transform: scale (0);
+    }
+    100%{
+        transform: scale (1)
     }
 }
 
