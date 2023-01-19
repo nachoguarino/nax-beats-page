@@ -127,7 +127,7 @@ footer .redes{
     justify-content: center;
     padding: 10px;
 }
-footer .redes img{
+footer .redes a img{
     width: 70px;
     padding: 5px; 
 }
@@ -516,7 +516,7 @@ footer .redes a{
 
 
 @media screen and (max-width:351px){
-    footer .redes img{
+    footer .redes a img{
         width: 50px;
     }
     .hero-box{
