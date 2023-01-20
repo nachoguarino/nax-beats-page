@@ -1,17 +1,17 @@
 /*----------MEDIA QUERYS-----------*/
 
 @media screen and (max-width:1133px){
-    .hero{
+    html main .hero{
         width: 100%;
     }
-    .catalogo-section .beats-box{
+    html main .index-content .catalogo-section .beats-box{
         padding: 25px;
     }
 
 }
 
 @media screen and (max-width: 1202px) {
-    .servicios .servicios-box div{
+    main .servicios .servicios-box div{
         margin: 25px;
     }
 }
@@ -23,7 +23,7 @@
     .licencias-precios p{
         font-size: 13px;
     }
-    .licencias-precios h2{
+    main .licencias-section .licencias-precios h2{
         font-size: 24px;
     }
 }
@@ -37,49 +37,49 @@
 }
 
 @media screen and (max-width:1000px) {
-    .catalogo-section .beats-box div{
+    html main .index-content .catalogo-section .beats-box div{
         width: 200px;
         height: 300px;
         padding: 10px;
         flex-direction: column;
     }
-    .catalogo-section .beats-box div img{
+    html main .index-content .catalogo-section .beats-box div img{
         width: 100px;
         height: 100px;
     }
-    .catalogo-section .beats-box div audio{
+    html main .index-content .catalogo-section .beats-box div audio{
         width:170px;
         height: 36px;
         margin-bottom: 20px;
         margin-top: 20px;
     }
-    .catalogo-section .beats-box div a{
+    html main .index-content .catalogo-section .beats-box div a{
         font-size: 15px;
         align-items: center;
 
     }
-    .catalogo-section .beats-box div h3{
+    html main .index-content .catalogo-section .beats-box div h3{
         font-size: 15px;
     }
 } 
 
 @media screen and (max-width:909px){
-    .hero-box{
+    html main .hero .hero-box{
         background-image: none;
         height: 55vh;
     }
-    .hero-text{
+    html main .hero .hero-box .hero-text{
         padding: 40px;
         width: 80%;
     }
 }
 
 @media screen and (max-width:819px){
-    nav ul li{
+    header nav ul li{
         margin: 5px;
         font-size: 18px;
     }
-    .hero h1{
+    html main .hero .hero-box .hero-text h1{
     font-size: 36px;
     }
 }
@@ -94,7 +94,7 @@
     .licencias-precios p{
         font-size: 12px;
     }
-    .licencias-precios h2{
+    main .licencias-section .licencias-precios h2{
         font-size: 15px;
     }
 }
@@ -109,7 +109,7 @@
         .licencias-precios p{
         display: none;
     }
-    .licencias-precios h2{
+    main .licencias-section .licencias-precios h2{
         font-size: 15px;
     }
         .licencias-precios .licencia-mp3{
@@ -134,11 +134,11 @@
     .nax-tittle{
         margin: 0;
     }
-    nav ul li{
+    header nav ul li{
         margin: 5px;
         font-size: 15px;
     }
-    .hero h3{
+    html main .hero .hero-box .hero-text h3{
         font-size: 18px;
     }
 }
@@ -150,9 +150,13 @@
 }
 
 @media  screen and (max-width:400px){
-    .licencias-section{
+    main .licencias-section{
         display: none;
-    } 
+    }
+    html main .index-content .catalogo-section h2{
+        padding: 20px;
+
+    }
 }
 
 
@@ -160,14 +164,14 @@
     footer .redes a img{
         width: 50px;
     }
-    .hero-box{
+    html main .hero .hero-box{
         height: 70vh;
         
     }
-    .hero-text h1{
+    html main .hero .hero-box .hero-text h1{
         font-size: 2rem;
     }
-    .hero-text h3{
+    html main .hero .hero-box .hero-text h3{
         font-size: 12px;
     }
 }
@@ -183,7 +187,7 @@
 }
 
 @media screen and (max-width:325px){
-    nav{
+    header nav{
         display: none;
     }
 }

@@ -39,69 +39,127 @@ html{
                     }
                 }
             }
-            .catalogo-section{
-                h1{
-                    text-align: center;
-                    padding: 20px;
-                    font-size: 3rem;
-                    color: #e6e6e6; 
-                }
-                h2{
-                    margin: 10px;
-                    font-size: 2rem;
-                    color: #e6e6e6;
-                    text-align: center;
-                    padding: 10px;
-                }
-                .beats-box{
-                    display: flex;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-                    padding: 50px;
-                    div{
-                        @include tamaño(300px, 400px, 20px);
+        .index-content{
+                .catalogo-section{
+                    h1{
                         text-align: center;
-                        background-color: $color-card;
-                        border-radius: 5%;
-                        box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
-                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                        font-weight: 200;
-                        transition: 1s linear;
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                        img{
-                            width: 150px;
-                            height: 150px;
-                        }
-                        h3{
-                            margin-top: 10px;
-                            color: black;
-                        }
-                        audio{
-                            width: 250px;
-                            margin-top: 25px;
-                            margin-bottom: 25px;
-                        }
-                        a{
-                            background-color: $color-boton;
-                            text-decoration: map-get($boton , td-boton);
-                            color: map-get($boton , color-boton );
-                            padding:map-get($boton , pad-boton);
-                            font-size:map-get($boton , font-s-boton );
-                            font-weight:map-get($boton , font-w-boton );
-                            border-radius: map-get($boton , bord-boton );
+                        padding: 20px;
+                        font-size: 3rem;
+                        color: #e6e6e6; 
+                    }
+                    h2{
+                        margin: 10px;
+                        font-size: 2rem;
+                        color: #e6e6e6;
+                        text-align: center;
+                        padding: 10px;
+                    }
+                    .beats-box{
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        padding: 50px;
+                        div{
+                            @include tamaño(300px, 400px, 20px);
+                            text-align: center;
+                            background-color: $color-card;
+                            border-radius: 5%;
+                            box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 200;
+                            transition: 1s linear;
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                            img{
+                                width: 150px;
+                                height: 150px;
+                            }
+                            h3{
+                                margin-top: 10px;
+                                color: black;
+                            }
+                            audio{
+                                width: 250px;
+                                margin-top: 25px;
+                                margin-bottom: 25px;
+                            }
+                            a{
+                                background-color: $color-boton;
+                                text-decoration: map-get($boton , td-boton);
+                                color: map-get($boton , color-boton );
+                                padding:map-get($boton , pad-boton);
+                                font-size:map-get($boton , font-s-boton );
+                                font-weight:map-get($boton , font-w-boton );
+                                border-radius: map-get($boton , bord-boton );
+                            }
                         }
                     }
+                }
+        }
+    }
+}
+
+/*---------CATOLOGO Y LICENCIAS---------*/
+
+
+main{
+    .catalogo-section{
+        h1{
+            text-align: center;
+            padding: 20px;
+            font-size: 3rem;
+            color: #e6e6e6; 
+        }
+        h2{
+            margin: 10px;
+            font-size: 2rem;
+            color: #e6e6e6;
+            text-align: center;
+            padding: 10px;
+        }
+        .beats-box{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px;
+            div{
+                @include tamaño(300px, 400px, 20px);
+                text-align: center;
+                background-color: $color-card;
+                border-radius: 5%;
+                box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 200;
+                transition: 1s linear;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+                h3{
+                    margin-top: 10px;
+                    color: black;
+                }
+                audio{
+                    width: 250px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                a{
+                    background-color: $color-boton;
+                    text-decoration: map-get($boton , td-boton);
+                    color: map-get($boton , color-boton );
+                    padding:map-get($boton , pad-boton);
+                    font-size:map-get($boton , font-s-boton );
+                    font-weight:map-get($boton , font-w-boton );
+                    border-radius: map-get($boton , bord-boton );
                 }
             }
         }
     }
-
-
-/*---------CATOLOGO(LICENCIAS)---------*/
-
-main{
     .licencias-section{
         .licencias-text{
             text-align: center;
@@ -296,5 +354,4 @@ main{
         transform: scale (1)
     }
 }
-
 

@@ -76,23 +76,23 @@ html {
         background-color: #7c4cbb;
         color: white;
         padding: 10px; }
-    html main .catalogo-section h1 {
+    html main .index-content .catalogo-section h1 {
       text-align: center;
       padding: 20px;
       font-size: 3rem;
       color: #e6e6e6; }
-    html main .catalogo-section h2 {
+    html main .index-content .catalogo-section h2 {
       margin: 10px;
       font-size: 2rem;
       color: #e6e6e6;
       text-align: center;
       padding: 10px; }
-    html main .catalogo-section .beats-box {
+    html main .index-content .catalogo-section .beats-box {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       padding: 50px; }
-      html main .catalogo-section .beats-box div {
+      html main .index-content .catalogo-section .beats-box div {
         width: 300px;
         height: 400px;
         padding: 20px;
@@ -103,19 +103,19 @@ html {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 200;
         transition: 1s linear; }
-        html main .catalogo-section .beats-box div:hover {
+        html main .index-content .catalogo-section .beats-box div:hover {
           transform: scale(1.1); }
-        html main .catalogo-section .beats-box div img {
+        html main .index-content .catalogo-section .beats-box div img {
           width: 150px;
           height: 150px; }
-        html main .catalogo-section .beats-box div h3 {
+        html main .index-content .catalogo-section .beats-box div h3 {
           margin-top: 10px;
           color: black; }
-        html main .catalogo-section .beats-box div audio {
+        html main .index-content .catalogo-section .beats-box div audio {
           width: 250px;
           margin-top: 25px;
           margin-bottom: 25px; }
-        html main .catalogo-section .beats-box div a {
+        html main .index-content .catalogo-section .beats-box div a {
           background-color: #c51b1b;
           text-decoration: none;
           color: white;
@@ -124,7 +124,57 @@ html {
           font-weight: bold;
           border-radius: 5%; }
 
-/*---------CATOLOGO(LICENCIAS)---------*/
+/*---------CATOLOGO Y LICENCIAS---------*/
+main .catalogo-section h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+  color: #e6e6e6; }
+
+main .catalogo-section h2 {
+  margin: 10px;
+  font-size: 2rem;
+  color: #e6e6e6;
+  text-align: center;
+  padding: 10px; }
+
+main .catalogo-section .beats-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px; }
+  main .catalogo-section .beats-box div {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: #839791;
+    border-radius: 5%;
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    transition: 1s linear; }
+    main .catalogo-section .beats-box div:hover {
+      transform: scale(1.1); }
+    main .catalogo-section .beats-box div img {
+      width: 150px;
+      height: 150px; }
+    main .catalogo-section .beats-box div h3 {
+      margin-top: 10px;
+      color: black; }
+    main .catalogo-section .beats-box div audio {
+      width: 250px;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+    main .catalogo-section .beats-box div a {
+      background-color: #c51b1b;
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5%; }
+
 main .licencias-section .licencias-text {
   text-align: center;
   color: white;
@@ -296,18 +346,17 @@ footer {
       text-decoration: none; }
       footer .redes a img {
         width: 70px;
-        height: 70px;
         padding: 5px; }
 
 /*----------MEDIA QUERYS-----------*/
 @media screen and (max-width: 1133px) {
-  .hero {
+  html main .hero {
     width: 100%; }
-  .catalogo-section .beats-box {
+  html main .index-content .catalogo-section .beats-box {
     padding: 25px; } }
 
 @media screen and (max-width: 1202px) {
-  .servicios .servicios-box div {
+  main .servicios .servicios-box div {
     margin: 25px; } }
 
 @media screen and (max-width: 1110px) {
@@ -315,7 +364,7 @@ footer {
     font-size: 15px; }
   .licencias-precios p {
     font-size: 13px; }
-  .licencias-precios h2 {
+  main .licencias-section .licencias-precios h2 {
     font-size: 24px; } }
 
 @media screen and (max-width: 1054px) {
@@ -325,38 +374,38 @@ footer {
     margin: 15px; } }
 
 @media screen and (max-width: 1000px) {
-  .catalogo-section .beats-box div {
+  html main .index-content .catalogo-section .beats-box div {
     width: 200px;
     height: 300px;
     padding: 10px;
     flex-direction: column; }
-  .catalogo-section .beats-box div img {
+  html main .index-content .catalogo-section .beats-box div img {
     width: 100px;
     height: 100px; }
-  .catalogo-section .beats-box div audio {
+  html main .index-content .catalogo-section .beats-box div audio {
     width: 170px;
     height: 36px;
     margin-bottom: 20px;
     margin-top: 20px; }
-  .catalogo-section .beats-box div a {
+  html main .index-content .catalogo-section .beats-box div a {
     font-size: 15px;
     align-items: center; }
-  .catalogo-section .beats-box div h3 {
+  html main .index-content .catalogo-section .beats-box div h3 {
     font-size: 15px; } }
 
 @media screen and (max-width: 909px) {
-  .hero-box {
+  html main .hero .hero-box {
     background-image: none;
     height: 55vh; }
-  .hero-text {
+  html main .hero .hero-box .hero-text {
     padding: 40px;
     width: 80%; } }
 
 @media screen and (max-width: 819px) {
-  nav ul li {
+  header nav ul li {
     margin: 5px;
     font-size: 18px; }
-  .hero h1 {
+  html main .hero .hero-box .hero-text h1 {
     font-size: 36px; } }
 
 @media screen and (max-width: 749px) {
@@ -366,7 +415,7 @@ footer {
     font-size: 12px; }
   .licencias-precios p {
     font-size: 12px; }
-  .licencias-precios h2 {
+  main .licencias-section .licencias-precios h2 {
     font-size: 15px; } }
 
 @media screen and (max-width: 600px) {
@@ -376,7 +425,7 @@ footer {
     font-size: 12px; }
   .licencias-precios p {
     display: none; }
-  .licencias-precios h2 {
+  main .licencias-section .licencias-precios h2 {
     font-size: 15px; }
   .licencias-precios .licencia-mp3 {
     grid-row: 1 / 3; }
@@ -393,10 +442,10 @@ footer {
     height: 110px; }
   .nax-tittle {
     margin: 0; }
-  nav ul li {
+  header nav ul li {
     margin: 5px;
     font-size: 15px; }
-  .hero h3 {
+  html main .hero .hero-box .hero-text h3 {
     font-size: 18px; } }
 
 @media screen and (max-width: 510px) {
@@ -404,17 +453,19 @@ footer {
     height: 150px; } }
 
 @media screen and (max-width: 400px) {
-  .licencias-section {
-    display: none; } }
+  main .licencias-section {
+    display: none; }
+  html main .index-content .catalogo-section h2 {
+    padding: 20px; } }
 
 @media screen and (max-width: 351px) {
   footer .redes a img {
     width: 50px; }
-  .hero-box {
+  html main .hero .hero-box {
     height: 70vh; }
-  .hero-text h1 {
+  html main .hero .hero-box .hero-text h1 {
     font-size: 2rem; }
-  .hero-text h3 {
+  html main .hero .hero-box .hero-text h3 {
     font-size: 12px; } }
 
 @media screen and (max-width: 330px) {
@@ -424,5 +475,5 @@ footer {
     width: 250px; } }
 
 @media screen and (max-width: 325px) {
-  nav {
+  header nav {
     display: none; } }

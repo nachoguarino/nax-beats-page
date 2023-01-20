@@ -16,7 +16,8 @@ footer{
         a{
             text-decoration: none;
             img{
-                @include tamaño(70px, 70px, 5px);
+                width: 70px;
+                padding: 5px;
             }
         }
 
