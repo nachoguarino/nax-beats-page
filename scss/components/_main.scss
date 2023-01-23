@@ -206,6 +206,7 @@ main{
             .subtext-kits{
                 @extend %flex-cut;
                 color: white;
+                text-align: center
             }
         }
     }

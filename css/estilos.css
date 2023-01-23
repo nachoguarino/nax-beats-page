@@ -210,7 +210,8 @@ main .kits-tittle-section {
       color: white;
       text-align: center; }
     main .kits-tittle-section .kits-tittle .subtext-kits {
-      color: white; }
+      color: white;
+      text-align: center; }
 
 main .kits-nuevos {
   align-items: center;
