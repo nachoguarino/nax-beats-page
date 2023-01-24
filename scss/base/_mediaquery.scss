@@ -92,7 +92,7 @@
         font-size: 12px;
     }
     .licencias-precios p{
-        font-size: 12px;
+        display: none;
     }
     main .licencias-section .licencias-precios h2{
         font-size: 15px;
@@ -100,28 +100,28 @@
 }
 
 @media  screen and (max-width:600px) {
-    .licencias-precios{
-        grid-template-rows: 50px 100px 50px;
+    main .licencias-section .licencias-precios{
+        grid-template-rows: 50px 50px 50px;
     }
-    .licencias-precios h3{
+    main .licencias-section .licencias-precios h3{
         font-size: 12px;
     }
-        .licencias-precios p{
+    main .licencias-section .licencias-precios p{
         display: none;
     }
     main .licencias-section .licencias-precios h2{
         font-size: 15px;
     }
-        .licencias-precios .licencia-mp3{
+    main .licencias-section .licencias-precios .licencia-mp3{
         grid-row: 1 / 3;
     }
-    .licencias-precios .licencia-wav{
+    main .licencias-section .licencias-precios .licencia-wav{
         grid-row: 1 / 3;
     }
-    .licencias-precios .licencia-full{
+    main .licencias-section .licencias-precios .licencia-full{
         grid-row: 1 / 3;
     }
-    .licencias-precios .licencia-exclusiva{
+    main .licencias-section .licencias-precios .licencia-exclusiva{
         grid-row: 1 / 3;
     }
 }
