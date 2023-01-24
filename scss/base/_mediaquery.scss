@@ -17,10 +17,10 @@
 }
 
 @media  screen and (max-width:1110px) {
-    .licencias-precios h3{
+    main .licencias-section .licencias-precios h3{
         font-size: 15px;
     }
-    .licencias-precios p{
+    main .licencias-section .licencias-precios p{
         font-size: 13px;
     }
     main .licencias-section .licencias-precios h2{
@@ -85,13 +85,13 @@
 }
 
 @media  screen and (max-width:749px) {
-    .licencias-precios{
+    main .licencias-section .licencias-precios{
         grid-template-rows: 100px 100px 50px;
     }
-    .licencias-precios h3{
+    main .licencias-section .licencias-precios h3{
         font-size: 12px;
     }
-    .licencias-precios p{
+    main .licencias-section .licencias-precios p{
         display: none;
     }
     main .licencias-section .licencias-precios h2{
