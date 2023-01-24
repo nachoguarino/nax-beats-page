@@ -75,7 +75,10 @@ html {
         text-decoration: none;
         background-color: #7c4cbb;
         color: white;
-        padding: 10px; }
+        padding: 10px;
+        transform: 3s linear; }
+        html main .hero .hero-box a:hover {
+          background-color: #8c00ff; }
     html main .index-content .catalogo-section h1 {
       text-align: center;
       padding: 20px;
@@ -116,7 +119,7 @@ html {
           margin-top: 25px;
           margin-bottom: 25px; }
         html main .index-content .catalogo-section .beats-box div a {
-          background-color: #c51b1b;
+          background-color: #2b0f5e;
           text-decoration: none;
           color: white;
           padding: 10px;
@@ -167,7 +170,7 @@ main .catalogo-section .beats-box {
       margin-top: 25px;
       margin-bottom: 25px; }
     main .catalogo-section .beats-box div a {
-      background-color: #c51b1b;
+      background-color: #2b0f5e;
       text-decoration: none;
       color: white;
       padding: 10px;
@@ -457,7 +460,9 @@ footer {
   main .licencias-section {
     display: none; }
   html main .index-content .catalogo-section h2 {
-    padding: 20px; } }
+    padding: 20px; }
+  html main .hero .hero-box {
+    height: 60vh; } }
 
 @media screen and (max-width: 351px) {
   footer .redes a img {
